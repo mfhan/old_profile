@@ -93,27 +93,6 @@ padding: 20px;
 
 
 
-/*
-.article-left{
-    position: absolute;
-    float: left;
-    width: 45%;
-    height: 50em;
-    padding: 5px;
-    border: 5px solid navy;
-    margin: 10px;
-}
-
-.article-right{
-    position: relative;
-    float: right;
-    width: 45%;
-    padding: 5px;
-    border: 5px solid navy;
-    margin: 5px;
-}
-*/
-
 
 aside{
     position: relative;
@@ -145,12 +124,24 @@ text-align: center;
 }
 
 h4{
-    font-size: 24px;
+    font-size: 18px;
 text-align: left;
-    display: block;
-}s
+    border-radius: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
 
-
+h5{
+    font-size: 16px;
+text-align: left;
+    border-radius: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
 
 
 
