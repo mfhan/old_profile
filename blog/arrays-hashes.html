@@ -1,0 +1,72 @@
+<!doctype html>
+<head>
+<meta charset=”utf-8”>
+ <title>Marie-France's Blog</title>
+
+
+<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+
+ <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+
+
+<div class="name">
+Version Control to Major Tom: <br>
+A Stellar Coding Adventure
+</div>
+
+<h3>Oct. 5: Arrays, Hashes and Other Cute Cuddly Concepts</h3>
+<h4>
+<br>
+The Ruby portion of my initiation has commenced, and I do feel like this is a death march. While I am learning and re-learning a metric ton of new things, I have the depressing feeling that nothing will really stick in my head and that Ruby will remain as abtruse and out-of-reach as a line of Egyptian hieroglyphs.
+<br>
+But I see that I am yet again expected to don my thinking hat and explain the mysteries of an age-old dilemma: </h4>
+
+<h3>Arrays or Hashes? </h3>
+<h5>
+Arrays are ordered collections of objects. They are indexed starting at the rather startling number of... 0, because a long time ago mathematicians decided that was sexier than counting like everybody else.
+<br>
+Meanhwile, a Hash is a list of keys to which values are attached. Indexing is done not by integers but by those keys, which dictate the order in which objects are ordered.
+<br>
+
+Examples, examples:
+
+<br>
+A typical array would be the first four letters of the Western alphabet. It is an orderly collection of objects that have a specific place. Let's call that array alpha_letters.
+<br> <h3>
+alpha_letters = [A, B, C, D] </h3>
+<br><h5>
+But let's imagine that there is a hash using these same letters, except this time we are at the Rugby World Cup (http://www.rugbyworldcup.com/pools) and there are five countries attached to each of these letters!
+<br>
+So for the letter A we have: Australia, England, Wales, Fiji, Uruguay, which form Pool A. <br>
+For Pool B South Africa, Samoa, Scotland, Japan and the United States. <br>
+For Pool C, New Zealand, Argentina, Tonga, Georgia and Namibia. <br>
+As for Pool D, it is led by my favorite team, France, along with  Ireland, Italy, Canada and Romania.
+
+So in effect, if I were to call up teams ['D'], I would get: France, Ireland, Italy, Canada, Romania.
+<br>
+To give you a nicer viw, why not decide to pair each letter with the leader of the corresponding pool? We would get this:
+</h5>
+<h3>
+pool_leaders = {
+<br>
+  A => "Australia",<br>
+  B => "South Africa",<br>
+  C => "New Zealand",<br>
+  D => "France"<br>
+}
+</h3>
+<h5>
+  Here the key "A" corresponds to "Australia," D to France etc. We can also keep the full roster of teams associated with each letter. But, you ask, why is this important?
+<br> Well, even in the simple context of the Rugby World Cup, knowing each team's pool is vital to the elimination phase of the tournament. The first quarterfinals will pit the winner of Pool B with the runner-up of Pool A. The winner of Pool C will meet the runner-up of Pool D, and so on. Hence the usefulness of collecting objects in key-value pairs.
+<br>
+I think these examples will make the difference between arrays and hashes a wee bit more understandable and make it easier to manipulate each object collection.</h5>
+<br>
+
+<a href="http://mfhan.github.io/blog/t1-git-blog.html"> Previous Entry: What are the benefits of version control, pray tell? </a>
+
+</body>
+
+ </html>
