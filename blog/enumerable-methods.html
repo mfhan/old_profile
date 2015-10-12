@@ -1,0 +1,94 @@
+<!doctype html>
+<head>
+<meta charset=”utf-8”>
+ <title>Marie-France's Blog</title>
+
+
+<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+
+ <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+
+<div class="name">
+Version Control to Major Tom: <br>
+A Stellar Coding Adventure
+</div>
+<small_box><a href="http://mfhan.github.io//">Back to Homepage</a>
+<br>
+<a href="../contact.html">More About Me</a>
+<br>
+</small_box>
+<br>
+<br>
+<h2>Oct. 11: Enumerable on a Bicycle</h2>
+<h4>
+<br>
+The big chunk of WebDev wisdom our cohort has had to chew on (and digest) this week is the concept of "Enumerable." The Enumerable module provides a collection of methods we can apply to iterate on Ruby's collection classes, in order to search, sort and manipulate them.  It's a bit hard to penetrate at first, but it saves a tremendous amount of time if you learn to use these enumerables well.
+ <br><br>
+There are myriads methods inside the Enumerable class, the most popuar ones being: Each, each_with_index, map or collect, chunk, partition, select, and inject.
+What makes it even more flexible, one can combine methods, such as map and each: if you chain the each_with_index method with map, you can have access to the current index inside your map block. <br><br>
+
+<h4>Enumerable#cycle</h4>
+<h5>
+<br>Enumerable#cycle yields all the elements in the objet again and again in a loop. The argument to #cycle specifies the number of times to cycle. If no integer is provided, it will be run to INFINITY.
+<br>
+<br>
+<br> Let's say we write this list of clothing sizes:
+<br>arr.cycle(2) { |i| puts i }
+<br>The cycle will be performed twice:
+<br>Small
+<br>Medium
+<br>Large
+<br>Extra Large
+<br>Small
+<br>Medium
+<br>Large
+<br>Extra Large
+<br>
+
+<br>
+Another example: you have a given number of skirts and want to wear a different one each day? We can make that happen.
+<br>
+<br>
+skirt_type = %w{Pencil Business A_Line Wool_Blend Plaid Pleated Denim}
+=> ["Pencil", "Business", "A_Line", "Wool_Blend", "Plaid", "Pleated", "Denim"]
+<br>
+<br>skirt_type.cycle {|skirt| puts skirt}
+<br>=> Pencil
+<br>Business
+<br>A_Line
+<br>Wool_Blend
+<br>Plaid
+<br>Pleated
+<br>Denim
+<br>Pencil
+<br>Business
+<br>...
+<br>
+<br> The cycle can be broken with the "break" statement
+<br>skirt_type.cycle do |skirt|
+<br>    puts skirt
+<br>    break if skirt == "Plaid"
+<br>end
+<br>=> Pencil
+<br>Business
+<br>A_Line
+<br>Wool_Blend
+<br>Pleated
+<br>=> nil
+<br>
+<br>
+<br> Conclusion: the #cycle method can be used to decide dynamically how many times to iterate through a collection. So now I can go and buy more skirts.
+<br>
+<br>
+ <a href="/arrays-hashes.html"> Previous Entry: Arrays and Hashes</a>
+<br>
+ <a href="/css-concepts.html"> Oct. 5: Is That Padding Soft Enough? </a>
+<br>
+<a href="/t1-git-blog.html"> Sept. 21: What are the benefits of version control, pray tell? </a>
+
+</body>
+
+ </html>
