@@ -1,7 +1,7 @@
 body {
     background-color:#9999FF;
     display: inline-block;
-    font-family: Georgia;
+    font-family: Geneva;
 }
 
 
@@ -31,7 +31,7 @@ span{
 .name{
     background-color: #FF66A3;
     font-style: bold;
-    font-family: Georgia;
+    font-family: Geneva;
     font-size: 36px;
     color: black;
     text-align: center;
