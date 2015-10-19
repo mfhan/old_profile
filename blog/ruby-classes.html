@@ -1,0 +1,114 @@
+<!doctype html>
+<head>
+<meta charset=”utf-8”>
+ <title>Marie-France's Blog</title>
+
+
+<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+
+ <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+
+<body>
+
+<div class="name">
+Version Control to Major Tom: <br>
+A Stellar Coding Adventure
+</div>
+<small_box><a href="file:///Users/mfhan/mfhan.github.io/blog/index.html">Back to Blog</a>
+<br>
+<a href="../contact.html">More About Me</a>
+<br>
+</small_box>
+<br>
+<br>
+<h2>Oct. 19: Classy Coding With Ruby</h2>
+<h4>
+<br>   Ruby is by nature a pretty friendly and accommodating language -- or so say those who have either mastered its complexity, or those who have never touched it. As for me, about to complete Week Six of Phase 0, I remain ofen befuddled by its syntax and its "magic" dust -- event though I am slowly starting to understand its mechanisms and its intricacies. Learning is HARD, and learning Ruby has been a major challenge in my life.
+ <br><br>
+The week's highlight has been the concept of Class, and its attendant elements.
+<br>
+Classes are at the core of Ruby programming because they define objects and what they can do. The class concept allows us to write our own categories of objects in neat bundles that will include methods.
+<br>
+<h3>Creating a Baseball Team
+</h3>
+<h4>We can, for instance, imagine we are managing a baseball team. We can create the class Ballplayer, which will encompass all the positions inside a baseball team. We can then create different instances of ballplayers (@ballplayer = Ballplayer.new), such as picher, infielder, outfielder, closer, catcher, etc.
+<br>All these players have common characteristics (two arms, two legs) and a number of skills (pitches, bats, walks, throws) which are all defined inside the Ballplayer class.
+<br>Once we define these skills as methods (we SET those methods), we can then instruct the players to actually DO these actions (to GET the method). Because these methods and definitions reside within a specific class, we can add more objects and they will behave within the same definition. We can add a new class object, long_reliever, and they will still come with the skillset common to all people who belong in that same Ballplayer class.
+<br>The class concept allows us to think in real-world terms and everyday English instead of lines of code. We can instruct our ballplayers to throw (a skills that all players must have, no matter what their position), or we can instruct them to walk, which is something that won't happen often to a starting pitcher and almost never to a relief pitcher.
+<br>We can also assign a specific salary on each player, depending on whether they are rookies, journeymen or superstars, for instance. We can assign different teams to each player. We can create the method win, which can apply only to the pitcher instance, or home_runs, which will come up with different numbers for each player.
+<br>
+<br>
+<ruby><pre>
+<br> class Ballplayer
+  attr_accessor :action
+  attr_reader :position
+<br>
+
+  def initialize(position, action)
+    @position = position
+    @action = action
+    @salary = salary
+    @total_team += 1
+  end
+<br>
+  def position=(position)
+    @position = position
+  end
+<br>
+ def action=(action)
+    @action = action
+  end
+<br>   def get_action
+    @action
+  end
+<br>
+  def salary=(salary)
+      @salary = salary
+   p "This player makes #{@salary} a year."
+  end
+end
+<br>
+</ruby></pre>
+<h4><text-align: left> We can now start to churn out nallplayers with their position, their main skill, and their salary:
+</h4>
+<code><pre>
+puts Ballplayer.total_team.inspect
+
+ballplayer1 = Ballplayer.new
+ballplayer1.position = "pitcher"
+puts ballplayer1.position
+ballplayer1.action = "throws"
+puts ballplayer1.action
+ballplayer1.salary = "$7 million"
+puts "This player makes #{@salary} a year."
+<br>
+<br>
+
+ballplayer2 = Ballplayer.new
+ballplayer2 .position = "catcher"
+puts ballplayer2 .position
+ballplayer2 .action = "catches"
+puts ballplayer2 .action
+ballplayer2 .salary = "$14 million"
+puts "This player makes #{@salary} a year."
+<br>
+</code></pre>
+<br>
+<h4><text-align: left>
+As you can see, the class concept allows for great flexibility and the use of plain English as opposed to abstract code. We can further maximize Ruby's pragmatic aspect by using attributes such as attr_*, which would provide methods to define and/or return important variables such as position and action.</h4>
+<br>
+<br>
+ <a href="http://mfhan.github.io/blog/enumerable-methods.html"> Previous Entry: Enumerable Methods</a>
+<br>
+ <a href="http://mfhan.github.io/blog/arrays-hashes.html"> Oct. 12: Arrays and Hashes</a>
+<br>
+ <a href="http://mfhan.github.io/blog/css-concepts.html"> Oct. 5: Is That Padding Soft Enough? </a>
+<br>
+<a href="http://mfhan.github.io/blog/t1-git-blog.html"> Sept. 21: What are the benefits of version control, pray tell? </a>
+
+</body>
+
+ </html>
+
