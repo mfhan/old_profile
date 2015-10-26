@@ -115,6 +115,18 @@ padding: 20px;
     margin-top: 10px;
 }
 
+
+.Projects{height: 100px;
+    width: 500px;
+  float: right;
+  border: 2px solid navy;
+  border-radius: 5px;
+padding: 20px;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
 .Tumblr{height: 100px;
     width: 500px;
   float: right;
@@ -125,6 +137,7 @@ padding: 20px;
     margin-left: 30px;
     margin-top: 10px;
 }
+
 
 
 /*
