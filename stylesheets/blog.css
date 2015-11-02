@@ -126,12 +126,13 @@ h1{
 h2{font-style: bold;
     font-size: 30px;
     font-family: Geneva;
-text-align: center;
+text-align: left;
     display: block;
 }
 
 h3{font-style: bold;
 text-align: center;
+text-indent: 20px;
 font-family: Geneva;
     font-size: 24px;
     float: center;
@@ -142,6 +143,7 @@ h4{
     font-size: 20px;
     font-family: Geneva;
 text-align: left;
+text-indent: 20px;
     border-radius: 5px;
     padding-right: 20px;
     padding-left: 20px;
@@ -153,6 +155,7 @@ h5{
     font-size: 16px;
 text-align: left;
 font-family: Geneva;
+text-indent: 20px;
     border-radius: 5px;
     padding-right: 20px;
     padding-left: 20px;
