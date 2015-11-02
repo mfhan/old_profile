@@ -1,0 +1,159 @@
+body{
+font: Geneva;
+font-size: 20px;
+}
+/*
+body {
+    background-color: white;
+    display: inline-block;
+    font-family: Geneva;
+    border: 2px solid navy;
+    padding: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 30px;
+}*/
+
+
+header {
+  width: 98%;
+  background-color: #FFD700;
+  padding: 10px;
+  border: 2px solid black;
+}
+
+
+.column-1 {
+  background-color: #00BFFF;
+  display: inline-block;
+  width: 31%;
+  padding-left: 13px;
+  margin-right: 7px;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+.column-2 {
+  background-color: #00FF7F;
+  display: inline-block;
+  width: 31%;
+  padding-left: 13px;
+  margin-left: 8px;
+  margin-bottom: 15px;
+  margin-top: -17px;
+}
+
+
+.column-3 {
+  background-color: #FFB6C1;
+  display: inline-block;
+  width: 31%;
+  padding-left: 13px;
+  margin-left: 8px;
+  margin-bottom: 15px;
+  margin-top: -17px;
+}
+
+footer {
+  bottom: 0;
+  width: 95%;
+  height: 50px;
+  background-color: #FF6347;
+  padding: 30px;
+  text-align: center
+  border: 2px solid black;
+}
+
+
+
+h1{
+    font-style: bold;
+    font-family: Geneva;
+    font-size: 36px;
+ text-align: center;
+    display: block;
+}
+
+h2{font-style: bold;
+    font-size: 30px;
+    font-family: Geneva;
+text-align: left;
+   /* display: block;*/
+}
+
+h3{font-style: bold;
+text-align: center;
+text-indent: 20px;
+font-family: Geneva;
+    font-size: 24px;
+    float: center;
+   /* display: block;*/
+}
+
+h4{
+    font-size: 20px;
+    font-family: Geneva;
+text-align: left;
+text-indent: 20px;
+   /* border-radius: 5px;*/
+    padding-right: 10px;
+    padding-left: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+bullet {
+  font-style: bold;
+font-size: 16px;
+    font-family: Geneva;
+text-align: left;
+text-indent: 10px;
+    border-radius: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+
+p {
+font-size: 16px;
+    font-family: Geneva;
+text-align: left;
+text-indent: 10px;
+    border-radius: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+h5{
+    font-size: 16px;
+text-align: left;
+font-family: Geneva;
+text-indent: 20px;
+    border-radius: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+
+ruby{
+    font-size: 18px;
+   font-family: monospace;
+text-align: left;
+    border-radius: 5px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+/*li {
+  list-style-type:square;
+}
+*/
