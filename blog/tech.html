@@ -1,0 +1,97 @@
+<!doctype html>
+<head>
+<meta charset=”utf-8”>
+ <title>Marie-France's Blog</title>
+
+
+<link rel="stylesheet" type="text/css" href="stylesheets/default.css">
+
+ <link rel="stylesheet" type="text/css" href="../stylesheets/blog.css">
+</head>
+
+<body>
+
+<div class="name">
+Version Control to Major Tom: <br>
+A Stellar Coding Adventure
+</div>
+<small_box><a href="file:///Users/mfhan/mfhan.github.io/blog/index.html">Back to Blog</a>
+<br>
+<a href="../contact.html">More About Me</a>
+<br>
+<a href="">Back to Home Page</a>
+</small_box>
+<br>
+<br>
+<h2>Nov. 2: Regular Regex</h2>
+<br>
+<h4>Among the many very very ultra essential important things that one must know about Ruby is a tool that hides under a rather benign name: Regular Expressions, or Regex.
+ <br>Even a newbie like me has hear of those objects, and shuddered at the thought of grappling with them. But grapple one must if one is to enter Dev Bootcamp's hallowed Phase 1. So there goes...
+ <br> While they do come preceded with a rather sinister reputation, regexes are "simply" tools that provide away of finding, replacing or specifying a pattern of characters in a strong. The slash / character signals a regex.
+ <br> At its most simple, a regex can help you find and replace frequently misspelled words in a long text ("thier" instead of "their"), or clean up an unruly table, such as a list of countries by population:</h4>
+
+ <h5>
+Rank  Country   Population  Date  % of world population <br>
+ <br>1 China[Note 2] 1,372,940,000 November 1, 2015  18.9%
+ <br>2 India 1,279,410,000 November 1, 2015  17.6%
+  <br>  3 United States[Note 3] 322,142,000 November 1, 2015  4.42%
+ <br>4 Indonesia 255,461,700 July 1, 2015  3.51%
+  <br>   5 Brazil  205,127,000 November 1, 2015  2.82%
+ <br>6 Pakistan  188,925,000 July 1, 2015  2.59%
+ <br>7 Nigeria 182,202,000 July 1, 2015  2.5%
+ <br>   8 Bangladesh  159,292,000 November 1, 2015  2.19%
+ <br>9 Russia[Note 4]  146,422,030 November 1, 2015  2.01%
+ <br> <br> </h5>
+ <h4>A simple, compact regular expression such as "\[\d+\]" would get rid of the distracting footnote brackets. Another, the disarmingly brief "^ +", would remove leading white spaces.
+</h4>
+<h3>Regex in Ruby</h3>
+<h4>In Ruby, regexes are instances of the Regexp class and provides ready methods to manipulate data.
+ One such method is gsub, which stands for global substitution, meaning it finds and replaces all instances of a given pattern. For instance, how many times have you seen the Oracle of Omaha's name misspelled? </h4>
+ <ruby>
+str="Warren Buffet declined to answer audience questions at a Jimmy Buffet concert"  <br>
+puts str.gsub("Buffet", "Buffett") <br>
+# => Warren Buffett declined to answer audience questions at a Jimmy Buffett concert <br>
+</ruby>
+<h4>Other regex methods of note: the string method Match, which can zero in on a portion of data and deliver essential information such as a dollar amount.
+  <br> <br>
+<a href="">Back to Home Page</a> <br>
+  <br>Let's say you have an hour-long mayoral speech on New York City's fiscal 2016. You turn the speech into an array, and try to find DOLLAR AMOUNTS in this endless jumble of words:
+  <br><h4>
+budget_arr =  ["Again, the executive budget for Fiscal 2015 will be $73.9 billion. We arrived at this budget with really a fantastic partnership from the City Council, from Speaker Mark-Viverito and all of her colleagues, and from working with elected officials and community leaders all over the city as we developed a number of our initiatives."
+ <br>
+"Again, we’ve talked about the UFT budget. We’ve also talked about the fact that those healthcare savings are extrapolated over all the municipal contracts that would amount to $3.4 billion in healthcare savings over the term of these contracts."
+ <br>
+"Now, looking ahead, we continue to face multi-billion dollar budget gaps in the out years. This is the structural deficit that we know we still face. The good news is these are manageable deficits. We’re confident that we will be able to handle them in time and they’re well below the deficits that we’ve seen in the last decade or so.
+ <br>
+ "Let me indicate here, this is Fiscal ’16, just over $2 billion; Fiscal ’17, just over $2 billion, Fiscal ’18 just over $3 billion. And again, you’ll see the comparison to the average over the previous 12 years. The average for what would be the third year of the budget, $3 billion, $3.7 billion. So in comparison, we feel that we’re in a strong position, but we know we have real work to do to close those deficits going forward."
+  <br><h4>
+You just want to collect the dollar amounts mentioned by Hizzoner, you simply type: <br> <br></h4>
+<ruby>
+budget_arr.each do |budget|  <br>
+   mtch = budget.match(/\$[\d,]+/) <br>
+   puts mtch <br>
+end
+</ruby> <br>
+<br><h4>
+Some colorful characters in the regex family: <br>
+* <bold>The greedy operator</bold>, which you just saw: the "+" sign will match the pattern that precedes it as many times as necessary, meaning it can return 73.9 , 3.7 or a nice round 3.
+
+<br>
+* <bold>The dot character</bold>, the Leatherman multitool of the regex world, which matches anything -- symbols, letter, number.
+<br>
+* <bold>The lazy dot</bold>, aka the question mark, which can grab the smallest part of a given pattern, thereby widening the search.
+
+<br>
+* <bold>The ^ and $ Anchors </bold>: They match a position instead of a character. The caret matches at the start of the string, and the dollar sign at the end of the string.
+<br>
+* <bold>The Pipe </bold>, which is the equivalent of "or". War|Peace matches War in "War and Peace", and if applied again it matches Peace. Pipes can be combined for even more matches.
+<br>
+<br>TEMPORARY CONCLUSION: Entire books can be written about regular expressions, but the one thing to know about them is that they're there to help you.
+<br>
+</h4>
+<a href="">Back to Home Page</a>
+<br>
+</section>
+</body>
+
+</html>
