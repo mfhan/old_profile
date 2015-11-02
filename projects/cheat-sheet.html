@@ -1,0 +1,292 @@
+<!doctype html>
+
+<head>
+<meta charset=”utf-8”>
+
+ <link rel="stylesheet" href="../stylesheets/cheat.css">
+
+ <title>Cheat Sheet</title>
+
+</head>
+
+<body>
+
+
+<a href="#">Back to Home</a>
+<a href="#">More About Me</a>
+
+<!--
+ <link rel="stylesheet" href="gps2-1.css">
+ -->
+
+    <title>The Cheat Sheet to End Em All</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>The Cheat Sheet to End Em All</h1>
+      <h3>This is a lovingly concocted cheat sheet summarizing the most salient learning points of my Dev Bootcamp experience. Credits to the Interwebs, so generous with advice to us budding coders. </h3>
+    </header>
+
+    <section class="column-1">
+      <article>
+        <h3>HMTL/CSS</h3>
+
+<p>
+<ul>
+
+<li>Open Link in New Tab:
+<a href="http://www.yourlink.com" target="_blank">Your linked text</a></pb><br>
+</li><br>
+  <li>
+Link To An Email Address:
+<a href="mailto:you@youremailaddress.com">Your email address or link</a></pb>
+<br></li>
+ <br><li>Link To An Email Address With Subject Line
+<a href="mailto:you@youremailaddress.com?subject=Your%20Email%20Subject">Your email address or link</a></pb><br>
+</li>
+<br>  <li>
+To make an anchored (“Jump”) Link</pb>: First, include the code below wherever you want the user to end up when they click the link, for example, at the top of the post. Name it something unique: <br>
+<a name="backtotop"></a>
+Then, add the anchor to your link that the user will click on to jump to that section:
+<a href="#backtotop">Back to top</a></li>
+</li>
+<br>
+<li>
+Image Smarts: replace the image URL with your own URL. Describing your image helps with SEO.
+</p></li>
+
+<li>
+A nice color wheel:</pb>
+<a href="http://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF ">Paletton</a></li>
+<br><li>
+Repeating Background Image; remember to upload the image online first:</pb>
+<br>
+body {
+background-image:url(http://);
+background-repeat:repeat;
+}
+<br>
+Change the above red “repeat” if you want the image to only repeat vertically: <br>repeat-y
+<br>
+Change the above red “repeat” if you want the image to only repeat horizontally: repeat-x
+<br>
+</li><br>
+<li>
+Top Centered Non-Repeating Background Image:
+<br>
+body {
+background-image:url(http://www.yourwebsite.com/<br>background-image.jpg);
+background-repeat:no-repeat;
+background-position: top center;
+}
+</p></li>
+
+
+
+<a href="http://icanbuildablog.com/2015/01/html-cheat-sheet-for-beginners/">Where I got Most of This Info</a>
+
+<br>
+      </article>
+    </section>
+
+    <section class="column-2">
+      <article>
+        <h3>RUBY</h3>
+<h4>
+General Tips</h4>
+<ul><p>
+<li>Use 2 space indent, no tabs.
+<li>Use [] over Array.new.; Use {} over Hash.new.
+<li>Learn to use Enumerable!!! </ul>
+
+<a href="http://github.com/chneukirchen/styleguide/raw/master/RUBY-STYLE">Click Here for More Info</a>
+
+
+<br>
+<!-- <h4>Control Expressions</h4>
+<ul>
+<li>
+
+if bool-expr [then]<br>
+  body<br>
+elsif bool-expr [then]<br>
+  body<br>
+else<br>
+  body<br>
+end<br>
+<br>
+<li>
+case target-expr<br>
+when comparison [, comparison]... [then]<br>
+  body<br>
+when comparison [, comparison]... [then]<br>
+  body<br>
+# ...<br>
+else # optional else<br>
+  body<br>
+end<br>
+<br>
+</ul>
+</p> -->
+<!--
+<h4> Class Syntax:</h4>
+
+class Person<br>
+        attr_accessor :name, :age<br>
+        def full_info<br>
+                return "#{@name} is #{@age} years old"<br>
+        end<br>
+end<br>
+fred = Person.new<br>
+fred.name = "Fred"<br>
+fred.age = 45<br>
+puts fred.full_info<br> -->
+
+<p>
+<h4> Key Array Methods:</h4>
+<ul>
+<li>.compact    Returns the Array without element that equal nil
+<li>.delete_if { |object| ... }   Deletes elements for which the block returns true
+<li>.each { |object| ... }    Sends each element to the block
+<!-- <li>.flatten    Flattens the Array -->
+<li>.join Returns a String with all elements separated by separator
+<li>.reverse    Reverses the order of elements
+<li>.rindex Object object...  Returns the index of the last occurrence of object
+</ul>
+  <h4> Key Hash Methods:</h4>
+<ul>
+<li>.include? .key?  Returns true if the hash includes a value for key
+<li>.value?  Returns true if the collection includes a key for value
+<li>.invert   Returns a new Hash with keys and values inverted
+<li>.merge  Returns a new Hash with entries from both Hashes
+<li>.select { |object| ... }    Returns an Array with key-value pairs for which the block returns true
+<li>.to_a   Returns an Array with nested key-value pairs
+</ul>
+
+<a href="https://dzone.com/refcardz/essential-ruby">Click Here for More Info</a>
+</article>
+    </section>
+
+
+<section class="column-3">
+<article>
+        <h3>JAVASCRIPT</h3>
+
+        <h4> Conditional and Loop Syntax</h4>
+
+<br>The For Loop
+<br>Syntax:
+ <ol>
+<li>Statement 1 is executed before the loop (the code block) starts.
+
+<li>Statement 2 defines the condition for running the loop (the code block).
+
+<li>Statement 3 is executed each time after the loop (the code block) has been executed.</li></ol>
+<br>
+Example
+<br>for (i = 0; i < 5; i++) {
+ <br>   text += "The number is " + i + "<br>";
+<br>}
+<br>
+<br>The While Loop
+<br>
+Syntax:
+<br>while (i < 10) {
+ <br>   text += "The number is " + i;
+ <br>   i++;
+<br>}
+<br> = The code in the loop will run, over and over again, as long as a variable (i) is less than 10.
+
+
+
+
+<!--
+IF STATEMENT
+ <br>if (str == "Hello"){
+ <br>   alert("Hi");
+<br>}
+<br>  else{
+<br>  alert("something is wrong!");
+<br>}
+<br>
+ <br> WHILE LOOP
+<br>while (i < n){
+<br> // do something
+<br> i++;
+<br>}
+<br>
+ <br>FOR LOOP
+<br>for (var i=0; i<n; i++){
+<br>  // do something else
+<br>}
+<br>
+<br>for (var key in obj){
+ <br> // do something with obj[key]
+<br>}
+<br> -->
+<!-- <h4>DEFINING FUNCTIONS</h4>
+
+<br>function foo(a,b){          // global function
+<br>  return a + b;
+<br>}
+<br>
+<br>var fn = function(a,b){     // save function as variable...
+<br>  return foo(a,b);
+<br>}
+<br>
+<br>obj.fn = function(a,b){     // ...or as part of object
+ <br> return a + b;
+<br>} -->
+
+
+<h4>COMPOSITE EXPRESSIONS</h4>
+
+a[b]: Subscript, fetch the field named by b from value a.
+<br>a.x: Shorthand for a["x"].
+<br>a(b): Function call. Call the function value a with b as argument. Zero or more argument expressions can be given, separated by spaces. a(1, 2, 3, 4)
+<br>a.x(b): Method call. Call the function found in field x of value a, and pass a as the this argument.
+<!-- <br>function(arg1, arg2) { /* ... body ... */ }
+Function value. Zero or more argument names. Any statements may appear in body.
+ -->
+
+
+ </article>
+</section>
+
+    <footer>
+      This information was lovingly gleaned all over the Internet. Do not shoot the gleaner</a>.
+    </footer>
+
+
+<!--
+Ruby BASICS
+Ruby Enumerables
+Ruby Hashes, Arrays, Strings, Integers
+JavaScript Objects
+JavaScript prototypes
+Looping in Ruby and JavaScript (comparisons)
+HTML
+CSS
+CSS Positioning
+GIT
+SQL
+Your own awesome topic!
+
+
+Release 6: Reflect
+What content was solidified in the process of completing this challenge?
+ANSWER:
+What content do you feel a bit fuzzy on still??
+ANSWER:
+What was the most difficult part of this challenge??
+ANSWER:
+Has your ability to add CSS to format and position objects improved since week 3??
+ANSWER:
+
+
+https://[USERNAME.]github.io/projects/cheat-sheet.html -->
+
+
+  </body>
+</html>
